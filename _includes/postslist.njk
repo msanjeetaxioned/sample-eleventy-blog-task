@@ -1,0 +1,9 @@
+<ul>
+    {% for post in postslist %}
+    <li>
+        <h3>{{post.data.title}}</h3>
+        <p>{{post.data.desc[0]}}</p>
+        <a href="{{post.url | url}}" title='{{post.data.title}}'>Read More</a>
+    </li>
+    {% endfor %}
+</ul>

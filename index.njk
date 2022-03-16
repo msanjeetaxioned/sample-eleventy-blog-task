@@ -1,0 +1,10 @@
+---
+layout: layouts/base.njk
+permalink: /
+---
+
+Hello! Welcome to my Blog!
+
+<h2>Topics:</h2>
+{% set postslist = collections.posts %}
+{% include "postslist.njk" %}
